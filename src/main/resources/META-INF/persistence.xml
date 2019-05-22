@@ -3,8 +3,7 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-	<persistence-unit name="jpaPU"
-		transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="jpaPU">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<class>br.com.ct.entity.Aluno</class>
 		<class>br.com.ct.entity.Curso</class>
@@ -12,6 +11,12 @@
 		<class>br.com.ct.entity.Escola</class>
 		<class>br.com.ct.entity.Professor</class>
 		<properties>
+		
+			<property name="javax.persistence.jdbc.url" value="x3ztd854gaa7on6s.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/pewzb8oja9l7awzx" />
+			<property name="javax.persistence.jdbc.user" value="cbpq4h182jkcc74b" />
+			<property name="javax.persistence.jdbc.password" value="ifhdu7sf4wpw68ws" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			
 			<!-- <property name="hibernate.hbm2ddl.auto" value="create" /> -->
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.format_sql" value="true" />
@@ -35,10 +40,6 @@
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 		-->
 		
-			<property name="javax.persistence.jdbc.url" value="x3ztd854gaa7on6s.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/pewzb8oja9l7awzx" />
-			<property name="javax.persistence.jdbc.user" value="cbpq4h182jkcc74b" />
-			<property name="javax.persistence.jdbc.password" value="ifhdu7sf4wpw68ws" />
-			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 		</properties>
 	</persistence-unit>
 </persistence>
