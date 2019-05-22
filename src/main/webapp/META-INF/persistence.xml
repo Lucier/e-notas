@@ -32,17 +32,17 @@
 	        <property name="hibernate.c3p0.timeout" value="300" />  
 	        <property name="hibernate.c3p0.max_statements" value="50" />  
 	        <property name="hibernate.c3p0.idle_test_period" value="3000" />
-		
+		<!--
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/trabalhosdb" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="101084" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-		<!--
-			<property name="javax.persistence.jdbc.url" value="x3ztd854gaa7on6s.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/pewzb8oja9l7awzx" />
-			<property name="javax.persistence.jdbc.user" value="cbpq4h182jkcc74b" />
-			<property name="javax.persistence.jdbc.password" value="ifhdu7sf4wpw68ws" />
+		-->
+			<property name="javax.persistence.jdbc.url" value="a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/o2evqd1szbhmtoya" />
+			<property name="javax.persistence.jdbc.user" value="lhrxbmanfnk6ixw4" />
+			<property name="javax.persistence.jdbc.password" value="o14mzmksbyzb1il9" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-			-->
+
 		</properties>
 	</persistence-unit>
 </persistence>
