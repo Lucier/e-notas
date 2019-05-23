@@ -4,23 +4,19 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="jpaPU"
-		transaction-type="RESOURCE_LOCAL">
-		<!-- Implementação do JPA, no nosso caso Hibernate -->
-        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		
+		transaction-type="JTA">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<class>br.com.ct.entity.Aluno</class>
-		<!--<class>br.com.ct.entity.Administrador</class> -->
 		<class>br.com.ct.entity.Curso</class>
 		<class>br.com.ct.entity.Disciplina</class>
 		<class>br.com.ct.entity.Escola</class>
-		<!--<class>br.com.ct.entity.Notas</class> -->
 		<class>br.com.ct.entity.Professor</class>
 		<properties>
 			<!-- <property name="hibernate.hbm2ddl.auto" value="create" /> -->
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.format_sql" value="true" />
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
-		
+		<!--
 			<property name="hibernate.connection.provider"  value="org.hibernate.connection.C3P0ConnectionProvider" />
 			<property name="hibernate.c3p0.min_size" value="5" />  
            	<property name="hibernate.c3p0.max_size" value="100" />  
@@ -32,17 +28,18 @@
 	        <property name="hibernate.c3p0.timeout" value="300" />  
 	        <property name="hibernate.c3p0.max_statements" value="50" />  
 	        <property name="hibernate.c3p0.idle_test_period" value="3000" />
+	        -->
 		<!--
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/trabalhosdb" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="101084" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 		-->
-			<property name="javax.persistence.jdbc.url" value="a07yd3a6okcidwap.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/o2evqd1szbhmtoya" />
-			<property name="javax.persistence.jdbc.user" value="lhrxbmanfnk6ixw4" />
-			<property name="javax.persistence.jdbc.password" value="o14mzmksbyzb1il9" />
+		
+			<property name="javax.persistence.jdbc.url" value="us-cdbr-iron-east-02.cleardb.net/heroku_b7a5951a3c76bec?reconnect=true" />
+			<property name="javax.persistence.jdbc.user" value="b82ed7d3cc485b" />
+			<property name="javax.persistence.jdbc.password" value="1423d8fd" />
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-
 		</properties>
 	</persistence-unit>
 </persistence>
