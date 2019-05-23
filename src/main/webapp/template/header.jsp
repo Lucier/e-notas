@@ -14,22 +14,22 @@
 
 <!-- Bootstrap core CSS     -->
 <link
-	href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css"
+	href="../resources/css/bootstrap.min.css"
 	rel="stylesheet" />
 
 <!-- Animation library for notifications   -->
 <link
-	href="${pageContext.request.contextPath}/resources/css/animate.min.css"
+	href="../resources/css/animate.min.css"
 	rel="stylesheet" />
 
 <!--  Light Bootstrap Table core CSS    -->
 <link
-	href="${pageContext.request.contextPath}/resources/css/light-bootstrap-dashboard.css"
+	href="../resources/css/light-bootstrap-dashboard.css"
 	rel="stylesheet" />
 
 
 <!--  CSS for Demo Purpose, don't include it in your project     -->
-<link href="${pageContext.request.contextPath}/resources/css/demo.css"
+<link href="../resources/css/demo.css"
 	rel="stylesheet" />
 
 
@@ -40,7 +40,7 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300'
 	rel='stylesheet' type='text/css'>
 <link
-	href="${pageContext.request.contextPath}/resources/css/pe-icon-7-stroke.css"
+	href="../resources/css/pe-icon-7-stroke.css"
 	rel="stylesheet" />
 
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
